@@ -91,6 +91,20 @@
         letter-spacing: .04em;
       }
 
+      nav { margin-top: 2.2rem; display: flex; justify-content: center; gap: .8rem; flex-wrap: wrap; }
+      nav a {
+        padding: .7rem 1.15rem;
+        border: 1px solid rgb(255 255 255 / 35%);
+        border-radius: 999px;
+        color: #fff9eb;
+        font-size: .9rem;
+        font-weight: 700;
+        text-decoration: none;
+        background: rgb(255 255 255 / 9%);
+        transition: background .2s ease, transform .2s ease;
+      }
+      nav a:hover, nav a:focus-visible { background: #ff4c9b; transform: translateY(-2px); }
+
       @keyframes bob {
         0%, 100% { translate: 0 0; }
         50% { translate: 0 -10px; }
@@ -109,6 +123,11 @@
       <p class="eyebrow">A little page with a lot of groove</p>
       <h1>Hello,<span>World!</span></h1>
       <p class="caption">Turn up the color. Let the good vibes play.</p>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </main>
   </body>
 </html>
